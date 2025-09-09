@@ -3,7 +3,9 @@ This is the official repository for the paper "MultiLogicNMR(er): A Benchmark an
 
 This repository contains the implementation of the MultiLogicNMRer framework and the three related datasets introduced in the paper. Non-monotonic reasoning (NMR) refers to the fact that conclusions may be invalidated by new information, a key aspect of human reasoning. An NMR task often results in multiple plausible sets of conclusions, known as "extensions". This project provides tools to evaluate and enhance the ability of Large Language Models (LLMs) to handle such complex reasoning scenarios.
 
-![Figure 1: An example of multi-extension NMR](https://github.com/sysulic/MultiLogicNMRer/blob/main/multiextension_example.png){width=200px height=100px}
+<div style="width:300px; height:200px;">
+![Figure 1: An example of multi-extension NMR](https://github.com/sysulic/MultiLogicNMRer/blob/main/multiextension_example.png)
+</div>
 
 (Note: This figure provides an intuitive example of how a diagnosis for a patient with chest pain changes from "acid reflux" to potentially "acid reflux" or a "heart attack" after learning about "shortness of breath".)
 
