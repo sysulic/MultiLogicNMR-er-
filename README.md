@@ -42,20 +42,6 @@ The Datasets directory contains three benchmark datasets (MultiLogicNMR, MultiLo
 Each data sample is a JSON object with the following fields:
 
 {
-  "Sample_number": 1,
-  "Origin_Facts": "talkative(morgan). love(morgan,orson). ...",
-  "Facts_number": 11,
-  "Default_Rules": "-octagonal(X):-talkative(X),-drab(X), not -combative(X), ...",
-  "NL_Origin_Facts": "Morgan is talkative. Morgan love Orson. ...",
-  "NL_Default_Rules": "If someoneA is talkative and not drab then he is not octagonal,unless he is not combative or he is educational. ...",
-  "Origin_ASP_extension_number": 1,
-  "Origin_Question_Text_Lists": "[-octagonal(morgan). -strong(morgan). -poor(morgan).]",
-  "NL_Origin_Question_Text": ["Morgan is not octagonal.", "Morgan is not strong.", "Morgan is not poor."],
-  "Origin_Question_Label_Lists": [["T"], ["F"], ["M"]]
-}
-
-
-{
 
 % A unique identifier for the sample.
 
