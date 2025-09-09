@@ -3,9 +3,7 @@ This is the official repository for the paper "MultiLogicNMR(er): A Benchmark an
 
 This repository contains the implementation of the MultiLogicNMRer framework and the three related datasets introduced in the paper. Non-monotonic reasoning (NMR) refers to the fact that conclusions may be invalidated by new information, a key aspect of human reasoning. An NMR task often results in multiple plausible sets of conclusions, known as "extensions". This project provides tools to evaluate and enhance the ability of Large Language Models (LLMs) to handle such complex reasoning scenarios.
 
-<div style="width:300px; height:200px;">
 ![Figure 1: An example of multi-extension NMR](https://github.com/sysulic/MultiLogicNMRer/blob/main/multiextension_example.png)
-</div>
 
 (Note: This figure provides an intuitive example of how a diagnosis for a patient with chest pain changes from "acid reflux" to potentially "acid reflux" or a "heart attack" after learning about "shortness of breath".)
 
@@ -13,7 +11,7 @@ This repository contains the implementation of the MultiLogicNMRer framework and
 # Datasets
 The Datasets directory contains three benchmark datasets (MultiLogicNMR, MultiLogicNMR_OOD, MultiLoigcNMR_NL) designed to evaluate Non-monotonic Reasoning. Each dataset includes both skeptical and credulous reasoning modes. Every sample contains a context with facts and default rules, along with three questions. The datasets are generated via a comprehensive pipeline that includes: 1) generating formal default theories, 2) solving them with an ASP (Answer Set Programming) solver to find all extensions, 3) translating the formal logic into natural language templates, and 4) rewriting the templated text with an LLM to increase linguistic diversity.
 
-![Figure 1: An example of multi-extension NMR](https://github.com/sysulic/MultiLogicNMRer/blob/main/Dataset_Generate_Framework.png){width=200px height=100px}
+![Figure 1: An example of multi-extension NMR](https://github.com/sysulic/MultiLogicNMRer/blob/main/Dataset_Generate_Framework.png)
 
 (Note: This figure illustrates the four-stage dataset generation process.)
 
@@ -101,7 +99,7 @@ Each data sample is a JSON object with the following fields:
 
 The Code directory contains the implementation of the MultiLogicNMRer neural-symbolic framework. This framework is based on the bound-based algorithm for ASP solving and uses LLMs to perform single-step reasoning operations.
 
- ![Figure 1: An example of multi-extension NMR](https://github.com/sysulic/MultiLogicNMRer/blob/main/Framework.png){width=200px height=100px}
+ ![Figure 1: An example of multi-extension NMR](https://github.com/sysulic/MultiLogicNMRer/blob/main/Framework.png)
  
  (Note: This figure shows the six modules of the MultiLogicNMRer framework: Grounding, Bound Initialization, Reduction, Reasoning, Selection, and Label Generation.)
 
