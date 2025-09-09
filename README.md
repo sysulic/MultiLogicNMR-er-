@@ -1,5 +1,5 @@
 # MultiLogicNMRer
-This is the official repository for the paper "MultiLogicNMR(er): A Benchmark and Neural-Symbolic Framework for Non-monotonic Reasoning with Multiple Extensions".
+This is the official repository for the paper "MultiLogicNMR(er): A Benchmark and Neural-Symbolic Framework for Non-monotonic Reasoning with Multiple Extensions" publish by EMNLP 2025.
 
 This repository contains the implementation of the MultiLogicNMRer framework and the three related datasets introduced in the paper. Non-monotonic reasoning (NMR) refers to the fact that conclusions may be invalidated by new information, a key aspect of human reasoning. An NMR task often results in multiple plausible sets of conclusions, known as "extensions". This project provides tools to evaluate and enhance the ability of Large Language Models (LLMs) to handle such complex reasoning scenarios.
 
